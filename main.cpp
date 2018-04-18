@@ -3,8 +3,9 @@
 
 using namespace std;
 
-//prototypes:
-
+void printVector(vector<int> ); //prototypes:
+int fillWith(vector<int>&, int);
+bool isPositive(int);
 
 /////DO NOT TOUCH/////
 int main()
@@ -41,4 +42,33 @@ int main()
   return 0;
 }
 
-//function definitions
+void printVector(vector<int> grid)  //function definitions
+{   
+    for (int r=0; r < grid.size(); r++)
+    {
+            cout<<grid[r]<<" ";
+    }
+}
+
+bool isPositive(int num)
+{
+    if (num > 0)
+    {
+        true;
+    }    
+    else
+    {
+        false;
+    }
+}
+int fillWith(vector<int>& vectorname, int num)
+{
+    for (int r = 0; r < vectorname.size(); r++)
+    {
+       vectorname.at(r) = num;
+    }
+}
+
+
+
+    
