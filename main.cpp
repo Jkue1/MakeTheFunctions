@@ -65,7 +65,7 @@ int fillWith(vector<int>& vectorname, int num)
 {
     for (int r = 0; r < vectorname.size(); r++)
     {
-       vectorname.at(r) = num;
+       vectorname[r] = num;
     }
 }
 
