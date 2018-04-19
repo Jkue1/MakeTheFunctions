@@ -4,7 +4,7 @@
 using namespace std;
 
 void printVector(vector<int> ); //prototypes:
-void fillWith(vector<int>&, int);
+void fillWith(vector<int> &, int);
 bool isPositive(int);
 
 /////DO NOT TOUCH/////
@@ -54,11 +54,11 @@ bool isPositive(int num)
 {
     if (num > 0)
     {
-        true;
+       return true;
     }    
     else
     {
-        false;
+       return false;
     }
 }
 void fillWith(vector<int>& vectorname, int num)
